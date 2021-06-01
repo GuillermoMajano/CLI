@@ -30,6 +30,6 @@ var configCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(configCmd)
-	configCmd.Flags().BoolP(&createInstall, "url", false, "a command for download package")
+	configCmd.Flags().BoolVarP(&createInstall, "url","u", false, "a command for download package")
 }
 
